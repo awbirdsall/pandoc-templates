@@ -24,6 +24,11 @@ $for(css)$
   <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
 $endfor$
 $if(math)$
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     TeX: {extensions: ["mhchem.js"]}
+   });
+  </script>
   $math$
 $endif$
 $for(header-includes)$
