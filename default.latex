@@ -3,7 +3,7 @@ $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
 $endif$
 % add mhchem for chemistry display with \ce:
-\usepackage{mhchem}
+\usepackage[version=3]{mhchem}
 $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
